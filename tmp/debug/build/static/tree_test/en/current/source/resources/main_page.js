@@ -47,7 +47,8 @@ TreeTest.mainPage = SC.Page.design({
 		contentBinding: 'TreeTest.filesController.content',
         selectionBinding: 'TreeTest.filesController.selection',
         contentValueKey: "name",
-        rowHeight: 28
+        rowHeight: 28,
+		delegate: 'TreeTest.filesController'
         //canEditContent: YES,
         //canDeleteContent: YES,
         //exampleView: Lilypad.fileView,        
