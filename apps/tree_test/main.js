@@ -25,8 +25,9 @@ TreeTest.main = function main() {
   // TODO: Set the content property on your primary controller
   // ex: TreeTest.contactsController.set('content',TreeTest.contacts);
 	TreeTest.store.from(SC.Record.fixtures);
-	var files = TreeTest.store.find(TreeTest.File, "/");//.get('treeItemChildren');
-	TreeTest.filesController.set('content', files.get('treeItemChildren'));
+	var files = TreeTest.store.find(TreeTest.File);//.get('treeItemChildren');
+	//console.log(SC.inspect(files));
+	TreeTest.filesController.set('content', files);
 
 } ;
 

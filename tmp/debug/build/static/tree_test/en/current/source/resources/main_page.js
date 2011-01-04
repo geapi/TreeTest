@@ -42,7 +42,7 @@ TreeTest.mainPage = SC.Page.design({
             }
         }),
 	}),
-	listView: SC.ListView.design({
+	listView: SC.SourceListView.design({
 		layout: {left: 20, right: 20, top:56, bottom: 20},
 		contentBinding: 'TreeTest.filesController.content',
         selectionBinding: 'TreeTest.filesController.selection',
